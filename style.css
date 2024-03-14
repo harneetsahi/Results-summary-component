@@ -1,0 +1,188 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  background-image: linear-gradient(rgb(106, 87, 231), rgb(48, 48, 226));
+  color: rgb(206, 197, 197);
+  border-bottom-right-radius: 1.5em;
+  border-bottom-left-radius: 1.5em;
+  padding: 1.5em;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+}
+
+.result-intro {
+  font-weight: bold;
+}
+
+.total-score {
+  display: inline-block;
+  background-image: linear-gradient(rgb(48, 48, 226), rgb(68, 73, 212));
+  border-radius: 50%;
+  padding: 1em;
+  margin: 1.2em 0;
+  width: 8em;
+  height: 8em;
+}
+
+.total {
+  font-size: 45px;
+  padding: 0.1em;
+  color: white;
+}
+
+.out-of {
+  color: rgba(206, 197, 197, 0.678);
+}
+
+.result-description {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 0.7em;
+}
+
+.result-explanation {
+  font-size: 12px;
+  font-weight: 100;
+  margin-bottom: 1em;
+}
+
+section {
+  padding: 1.5em;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 18px;
+  color: rgb(62, 59, 59);
+}
+
+.container {
+  padding: 0.5em 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 0 0.5em;
+}
+
+.block {
+  border-radius: 7px;
+  padding: 0.8em 0.8em 0.8em 0;
+  margin: 1em 0;
+}
+
+.reaction {
+  background-color: rgb(248, 236, 236);
+}
+
+.reaction .text {
+  color: lightcoral;
+}
+.memory {
+  background-color: rgb(247, 247, 222);
+}
+.memory .text {
+  color: rgb(226, 181, 2);
+}
+
+.verbal {
+  background-color: rgb(228, 255, 244);
+}
+
+.verbal .text {
+  color: rgb(48, 159, 173);
+}
+
+.visual {
+  background-color: rgb(234, 234, 255);
+}
+
+.visual .text {
+  color: rgb(65, 29, 173);
+}
+.btn {
+  color: rgb(233, 233, 233);
+  background-color: rgba(8, 8, 36, 0.835);
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 1em;
+  margin: 1.5em 0 0 0;
+  text-align: center;
+  letter-spacing: 0.02em;
+  border-radius: 2em;
+}
+
+.btn:hover {
+  background-image: linear-gradient(rgb(106, 87, 231), rgb(48, 48, 226));
+}
+
+.btn:active {
+  opacity: 0.8;
+}
+
+section p {
+  color: grey;
+}
+
+section span {
+  color: black;
+}
+
+@media (min-width: 750px) {
+  .entire-container {
+    padding: 5em;
+    margin: 4em 0;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: end;
+    box-shadow: 0px 4px 15px 4px rgba(0, 0, 0, 0.141);
+  }
+
+  .box {
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.141);
+    border-radius: 20px;
+    max-width: max-content;
+  }
+
+  .box > * {
+    flex: 1;
+  }
+
+  header {
+    border-radius: 20px;
+  }
+
+  .total-score {
+    width: 12em;
+    height: 12em;
+  }
+
+  .total {
+    font-size: 66px;
+    padding: 0.3em 0 0 0;
+  }
+
+  .result-explanation {
+    padding: 1.4em;
+  }
+}
